@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#AA000000"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dragHandle"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="#33FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="≡ Arraste para mover"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/buttonClose"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:text="✕"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:id="@+id/textViewScript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:lineSpacingExtra="6dp"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="-8dp"
+        android:text="❚❚"
+        android:textSize="16sp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"/>
+
+</FrameLayout>
